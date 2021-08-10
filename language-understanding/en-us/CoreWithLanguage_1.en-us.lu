@@ -1,0 +1,151 @@
+# Cancel
+- cancel
+- quit
+- abort
+- exit
+- never mind
+- forget about it
+- just stop already
+- end this now
+
+# Help
+- help
+- im stuck
+- how do you work
+- what can you do
+- what can you help me with
+- i need help
+- i need some assistance
+
+# None
+- where is my car?
+- I want to order a pizza
+- place an item on hold
+- Is it going to rain?
+- turn on the lights
+- check my account balance
+- do unicorns really exist
+- duck
+
+# examTrigger
+-exams
+-i'm struggling with my exams
+-i struggle with exams
+-i'm find studying hard
+-exams are a lot of pressure
+-i want to do well in my exams
+
+# Ifeelbad
+-i'm depressed
+-i'm sad
+-i feel bad 
+-i feel depressed
+-i have depression
+
+# MoodQuiz
+-Complete The Mood Quiz!
+-Mood Quiz
+-mood quiz
+- i want to take the quiz
+- i want mood quiz
+-can i have the mood quiz
+-i need mood quiz
+-the mood quiz
+
+# movementTRigger
+- i get really fidgity
+- i get really restless
+-i feel restless
+-i feel fidgity
+
+# depressed
+-Depressed
+-I'm depressed
+-I have depression
+-I think I have depression
+-I feel Depressed
+-I feel sad all the time
+-i'm always depressed
+-im depressed
+-i'm really down
+-im so depressed
+-i feel down
+-im sad
+-im down all the time
+
+# anxiety
+-im anxious
+# Status
+-User Status 
+-user status
+-UserStatus
+
+# SelfHarmTrigger
+-i {harming=hurt} myself
+-i {harming=harm} myself
+-i cut myself
+-i like {harming=cutting}
+-i {harming=cut} my arm
+-i {harming=cut} 
+-im a {harming=cutter}
+- i {harming=slice} my wrists
+-i think about {harming=hurting} myself
+
+@ml harming
+# BullyingTrigger
+-im {bullied=bullied}
+-i get {bullied=bullied}
+- i am being {bullied=bullied}
+-people {bullied=bully} me
+-{bullied=bullies} at school
+- i have a {bullied=bully}
+
+@ml bullied
+# AbuseTrigger
+-people {abused=attack} me
+-someone {abused=hurts}
+-my dad {abused=hits} me
+-someone beats me up
+-i get {abused=beat}
+-i have been {abused=abused}
+-people {abused=abuse} me
+- i was {abused=raped}
+-{abused=rape}
+-ive been {abused=assualted}
+
+@ml abused
+# suicideTrigger
+-I don’t want to live anymore.
+-not wake up
+-I want to {suicidal=disappear}.
+-kill myself
+-end my life
+-I want everything to end
+-Life isnt worth living
+-everything seems {suicidal=black}
+-I want everything to stop
+-I want everything to {suicidal=end}
+-I want to {suicidal=die}
+-{suicidal=kill} me
+-I want to kill myself
+-Life isnt worth living
+- {suicidal=suicide}
+-I want everything to stop
+@ml suicidal
+# sad
+-sad
+
+# whoSamaritans
+-who are the Samaritans
+-{Samaritans=samaritans}
+-can i contact the {Samaritans=samaritans}
+
+@ml Samaritans
+
+
+
+# PHQuestionnaire
+-i want the moodquiz
+
+# HADS
+-i want the mind quiz

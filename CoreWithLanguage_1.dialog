@@ -1,0 +1,249 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "name": "BotWithLUIS",
+    "description": "",
+    "id": "4pM5gc"
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnConversationUpdateActivity",
+      "$designer": {
+        "id": "376720"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.Foreach",
+          "$designer": {
+            "id": "518944",
+            "name": "Loop: for each item"
+          },
+          "itemsProperty": "turn.Activity.membersAdded",
+          "actions": [
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "641773",
+                "name": "Branch: if/else"
+              },
+              "condition": "string(dialog.foreach.value.id) != string(turn.Activity.Recipient.id)",
+              "actions": [
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "PlH6iz"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "WelcomeDialog"
+                }
+              ]
+            }
+          ],
+          "value": "dialog.foreach.value",
+          "index": "dialog.foreach.index"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "e1i6lY",
+        "name": "Cancel"
+      },
+      "intent": "Cancel",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "FDsuIq"
+          },
+          "activityProcessed": true,
+          "dialog": "CancelDialog"
+        }
+      ],
+      "condition": "=turn.recognized.score > 0.9"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "9wETGs",
+        "name": "Help"
+      },
+      "intent": "Help",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "B0NP8m"
+          },
+          "activityProcessed": true,
+          "dialog": "HelpDialog"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "SHHNsx",
+        "name": "MoodQuiz"
+      },
+      "intent": "MoodQuiz",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "eoLYpJ"
+          },
+          "activityProcessed": true,
+          "dialog": "PHQuestionnaire"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "crPM3O",
+        "name": "Status"
+      },
+      "intent": "Status",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "iNji5P"
+          },
+          "activityProcessed": true,
+          "dialog": "UserStatus"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "rjeLNG",
+        "name": "SelfHarmTrigger"
+      },
+      "intent": "SelfHarmTrigger",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "x5E2bV"
+          },
+          "activityProcessed": true,
+          "dialog": "SelfHarm"
+        },
+        {
+          "$kind": "Microsoft.CancelAllDialogs",
+          "$designer": {
+            "id": "doL547"
+          },
+          "activityProcessed": true
+        }
+      ],
+      "condition": "=SelfHarmTrigger.Score>=0.8"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "KLRorP",
+        "name": "BullyingTrigger"
+      },
+      "intent": "BullyingTrigger",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "bSTARi"
+          },
+          "activityProcessed": true,
+          "dialog": "Bullying"
+        },
+        {
+          "$kind": "Microsoft.CancelAllDialogs",
+          "$designer": {
+            "id": "NC211S"
+          },
+          "activityProcessed": true
+        }
+      ],
+      "condition": "=#BullyingTrigger.Score>=0.8"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "j2qQbf",
+        "name": "AbuseTrigger"
+      },
+      "intent": "AbuseTrigger",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "rohYwW"
+          },
+          "activityProcessed": true,
+          "dialog": "Abuse"
+        },
+        {
+          "$kind": "Microsoft.CancelAllDialogs",
+          "$designer": {
+            "id": "Khe2k6"
+          },
+          "activityProcessed": true
+        }
+      ],
+      "condition": "=#AbuseTrigger.Score>=0.8"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "qKOqdP",
+        "name": "HADS"
+      },
+      "intent": "HADS",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "e5ElvQ"
+          },
+          "activityProcessed": true,
+          "dialog": "HADS"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "fwMg1z",
+        "name": "suicideTrigger"
+      },
+      "intent": "suicideTrigger",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "IB8G3y"
+          },
+          "activityProcessed": true,
+          "dialog": "suicidal"
+        }
+      ],
+      "condition": "=#suicideTrigger.Score>=0.8"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "4rLQpT",
+        "name": "PHQuestionnaire"
+      },
+      "intent": "PHQuestionnaire"
+    }
+  ],
+  "generator": "CoreWithLanguage_1.lg",
+  "id": "CoreWithLanguage_1",
+  "recognizer": "CoreWithLanguage_1.lu.qna"
+}

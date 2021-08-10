@@ -1,0 +1,75 @@
+{
+  "CoreWithLanguage_1.en-us": {
+    "rootDialog": true,
+    "triggers": {
+      "": [
+        "WelcomeDialog.en-us"
+      ],
+      "Cancel": [
+        "CancelDialog.en-us"
+      ],
+      "Help": [
+        "HelpDialog.en-us"
+      ],
+      "MoodQuiz": [
+        "PHQuestionnaire.en-us"
+      ],
+      "Status": [
+        "UserStatus.en-us"
+      ],
+      "SelfHarmTrigger": [
+        "SelfHarm.en-us"
+      ],
+      "BullyingTrigger": [
+        "Bullying.en-us"
+      ],
+      "AbuseTrigger": [
+        "Abuse.en-us"
+      ],
+      "HADS": [
+        "HADS.en-us"
+      ],
+      "suicideTrigger": [
+        "suicidal.en-us"
+      ],
+      "PHQuestionnaire": ""
+    }
+  },
+  "Anxiety.en-us": {
+    "rootDialog": false,
+    "triggers": {
+      "": [
+        "PHQuestionnaire.en-us"
+      ]
+    }
+  },
+  "Depression.en-us": {
+    "rootDialog": false,
+    "triggers": {
+      "": [
+        "PHQuestionnaire.en-us"
+      ]
+    }
+  },
+  "UnknownFeelings.en-us": {
+    "rootDialog": false,
+    "triggers": {
+      "": [
+        "HADS.en-us"
+      ]
+    }
+  },
+  "WelcomeDialog.en-us": {
+    "rootDialog": false,
+    "triggers": {
+      "": [
+        "Depression.en-us",
+        "Anxiety.en-us",
+        "UnknownFeelings.en-us",
+        "UnknownFeelings.en-us",
+        "UnknownFeelings.en-us",
+        "PHQuestionnaire.en-us"
+      ]
+    }
+  }
+}
