@@ -1,3 +1,8 @@
+#The Full Source code downloaded from Bot Framework Composer is found in CoreWithLanguage_1_export.zip Files have been uploaded from this individually but all folders and file are found within this. 
+
+
+##The following is the readme from Bot Framework Composer:
+
 # Welcome to your new bot
 
 This bot project was created using the Core Bot with Azure Language Understanding template, and contains support for a base set of conversational flows.
