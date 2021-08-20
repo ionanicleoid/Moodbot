@@ -1,7 +1,7 @@
-#The Full Source code downloaded from Bot Framework Composer is found in CoreWithLanguage_1_export.zip Files have been uploaded from this individually but all folders and file are found within this. 
+# The Full Source code downloaded from Bot Framework Composer is found in CoreWithLanguage_1_export.zip Files have been uploaded from this individually but all folders and file are found within this. 
 
 
-##The following is the readme from Bot Framework Composer:
+## The following is the readme from Bot Framework Composer:
 
 # Welcome to your new bot
 
