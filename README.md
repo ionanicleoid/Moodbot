@@ -1,5 +1,9 @@
-# The Full Source code downloaded from Bot Framework Composer is found in CoreWithLanguage_1_export.zip Files have been uploaded from this individually but all folders and file are found within this. 
+# Source Code 
 
+The source code in this repository is downloaded from Bot Framework Composer is found in CoreWithLanguage_1_export.zip 
+Files have been uploaded from this individually but all folders and file are found within this repo.
+
+A link to a recording to the behind the scene of the architecture of Moodbot and Bot Framework Composer is here get better understanding of the source code: https://pro.panopto.com/Panopto/Pages/Viewer.aspx?tid=d76bce45-8d86-4b51-84c5-ad8a00ab0022
 
 ## The following is the readme from Bot Framework Composer:
 
